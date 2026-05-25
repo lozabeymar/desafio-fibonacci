@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahorro Fibonacci</title>
+    <link rel="stylesheet" href="../fibonacci/css/estilos.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="encabezado">💰 ¡AHORRA COMO UN GENIO!</h1>
+        <h3 class="autor">Por: Beymar Orlando Loza Mayta</h3>
+
+        <div class="card">
+            <p class="intro">
+                ¿Alguna vez has sentido que ahorrar es aburrido? ¡Eso es porque no conocías el 
+                <strong>Poder de Fibonacci</strong>! 🌀
+            </p>
+            <p class="explicacion">
+                Esta seceuncia es una manera en que entendemos como Dios creo los girasoles y las galaxias. Tú la usarás para hacer crecer tu dinero. 
+                Empezamos con <strong>Bs1</strong> y cada mes tu meta será la suma de los dos meses anteriores. 
+                ¡Es un desafío matemático que premia tu constancia!
+            </p>
+
+            <form id="form-ahorro">
+                <div class="input-group">
+                    <label for="mes">¿Cuántos meses planeas ahorrar?</label>
+                    <input type="number" id="mes" placeholder="Ej. 12" required min="1">
+                </div>
+                <button type="submit" class="btn">¡Calcular mi Meta!</button>
+                <p class="explicacion">La matematica ayuda a resolver este y otros problemas solo debemos alicarla</p>
+            </form>
+        </div>
+        
+        <div id="resultado" class="resultado-box"></div>
+    </div>
+  
+
+    <script src="../fibonacci/js/script.js"></script>
+</body>
+</html>
