@@ -25,9 +25,6 @@ document.addEventListener("DOMContentLoaded", function() {
             b = c;
         }
         
-        const mensaje = `¡Increíble! En ${n} meses habrás acumulado un total de Bs${sumTotal}. 
-        (En tu último mes ahorrarás Bs${a - (n === 1 ? 0 : b-a)})`; 
-        
         document.getElementById("resultado").innerHTML = `🚀 Total Ahorrado: Bs ${sumTotal}`;
         
     });
