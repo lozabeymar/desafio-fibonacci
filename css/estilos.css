@@ -1,1 +1,131 @@
+/* Paleta de colores claros */
+:root {
+    --bg-color: #f8fbf8;
+    --card-bg: #ffffff;
+    --text-color: #2f3640;
+    --accent-color: #27ae60;
+    --secondary-color: #ecf0f1;
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
 
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+h1 { color: var(--accent-color); font-size: 2rem; }
+
+.content-card, .calculator-card {
+    background: var(--card-bg);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    margin-bottom: 20px;
+}
+.imagen {
+    display: block;
+    margin: 20px auto;
+    border-radius: 12px;
+    box-shadow: var(--shadow); /* Para que combine con tus tarjetas */
+    width: 60%;
+    height: 500px;
+}
+.technical { border-left: 5px solid var(--accent-color); }
+
+.input-group { margin-bottom: 15px; }
+
+label { display: block; margin-bottom: 8px; font-weight: bold; }
+
+input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid var(--secondary-color);
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.btn {
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s;
+}
+
+.btn:hover { background-color: #219150; }
+
+.result-box {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f0f7f2;
+    border-radius: 8px;
+    word-wrap: break-word;
+    color: var(--accent-color);
+    min-height: 20px;
+}
+
+.reflection {
+    text-align: center;
+    font-style: italic;
+    color: #7f8c8d;
+    padding: 20px;
+}
+
+/* --- Añade esto al final de tu estilos.css --- */
+
+/* Ajustes para tablets y celulares */
+@media (max-width: 600px) {
+    body {
+        padding: 10px; /* Menos espacio en los bordes para aprovechar la pantalla */
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 1.5rem; /* Título un poco más pequeño para que no se corte */
+    }
+
+    .content-card, .calculator-card {
+        padding: 15px; /* Comprimimos el relleno de las tarjetas */
+        border-radius: 8px;
+    }
+
+    .btn {
+        width: 100%; /* El botón ocupa todo el ancho para que sea fácil de tocar con el dedo */
+        padding: 15px;
+    }
+
+    input[type="number"] {
+        font-size: 16px; /* Evita que el iPhone haga zoom automático al hacer clic */
+    }
+
+    .reflection p {
+        font-size: 0.9rem; /* Texto de la reflexión un poco más pequeño */
+    }
+}
+
+/* Efecto sutil para pantallas grandes */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 900px; /* Un poco más de ancho en monitores grandes */
+    }
+}
