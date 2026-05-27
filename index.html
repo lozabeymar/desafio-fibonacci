@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La serie de Fibonacci en la naturaleza</title>
+    <link rel="stylesheet" href="../fibonacci/css/estilos.css">
+</head>
+<body>
+    <main class="container">
+        <header>
+            <h1>Descubre cómo una serie matemática se aplica en la naturaleza</h1>
+            <p class="author">Por: <strong>Beymar Orlando Loza Mayta</strong></p>
+        </header>
+
+        <section class="content-card">
+            <p>
+                El contexto de este problema reside en la eficiencia biológica y la optimización del espacio. 
+                En la naturaleza, las plantas no crecen de forma azarosa, sino que siguen un patrón matemático para 
+                asegurar su supervivencia; por ejemplo, las hojas se distribuyen alrededor del tallo siguiendo los 
+                números de la serie de Fibonacci para que cada una reciba la máxima cantidad de luz solar y lluvia 
+                sin tapar a las de abajo. 
+                <br><br>
+                Este fenómeno, conocido como filotaxis, revela que la secuencia de Fibonacci 
+                no es solo un concepto abstracto de la aritmética, sino un plano arquitectónico que permite que 
+                estructuras como los pétalos de una flor, las escamas de una piña o las semillas de un girasol se 
+                empaqueten de la manera más compacta y perfecta posible.
+            </p>
+        </section>
+
+        <section class="content-card technical">
+            <p>
+                La sucesión de Fibonacci es una secuencia numérica infinita en la que cada término se obtiene mediante 
+                la recursión de los dos valores anteriores, comenzando típicamente con 0 y 1. 
+                <br><br>
+                Formalmente, se define mediante la relación de recurrencia F_n = F_{n-1} + F_{n-2}.
+                <br><br>
+                <img src="../fibonacci/img/image.png" alt="Codigo" class="imagen" >
+                <center><figcaption>Codigo de JavaScript</figcaption></center>
+                <br><br>
+                Esta serie es fundamental en ciencias de la computación para el análisis de algoritmos y estructuras de 
+                datos, y destaca por su estrecha relación con la proporción áurea, manifestándose frecuentemente en 
+                patrones biológicos y disposiciones geométricas naturales.
+            </p>
+        </section>
+
+        <section class="calculator-card">
+            <form id="formulario">
+                <div class="input-group">
+                    <label for="n">¿Cuántos niveles quieres ver?</label>
+                    <input type="number" id="n" placeholder="Ej. 10" min="1" max="100">
+                </div>
+                <button type="submit" class="btn">Calcular Secuencia</button>
+            </form>
+            <div id="resultado" class="result-box"></div>
+        </section>
+
+        <footer class="reflection">
+            <p>"La sucesión de Fibonacci actúa como una huella matemática que nos permite descifrar la armonía de 
+                la creación. Esta secuencia numérica es el lenguaje con el que se estructura la realidad, desde la disposición de 
+                las galaxias hasta la sutil geometría de una flor, revelando una convergencia matemática perfecta entre 
+                el diseño natural y DIOS."</p>
+        </footer>
+    </main>
+
+    <script src="../fibonacci/js/script.js"></script>
+</body>
+</html>
